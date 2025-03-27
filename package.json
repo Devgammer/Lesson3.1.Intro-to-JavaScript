@@ -1,0 +1,23 @@
+{
+  "name": "lesson3.1.intro-to-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devgammer/Lesson3.1.Intro-to-JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Devgammer/Lesson3.1.Intro-to-JavaScript/issues"
+  },
+  "homepage": "https://github.com/Devgammer/Lesson3.1.Intro-to-JavaScript#readme",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
