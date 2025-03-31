@@ -16,8 +16,9 @@
     "url": "https://github.com/Devgammer/Lesson3.1.Intro-to-JavaScript/issues"
   },
   "homepage": "https://github.com/Devgammer/Lesson3.1.Intro-to-JavaScript#readme",
-  "description": "",
   "dependencies": {
     "chalk": "^5.4.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
