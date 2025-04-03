@@ -1,7 +1,141 @@
-const r = +prompt(60);
+// const r = +prompt(60);
 
-const circleLength = 2 * Math.PI * r;
-console.log(Math.round(circleLength));
+// // const circleLength = 2 * Math.PI * r;
+// // console.log(Math.round(circleLength));
 
-const circleSquare = Math.PI * Math.pow(r, 2);
-console.log(Math.round(circleSquare));
+// const circleSquare = Math.PI * Math.pow(r, 2);
+// console.log(Math.round(circleSquare));
+
+// const x = 0.1;
+// const y = 0.3;
+// // const sum = (x * 100 + y * 100) / 100;
+// const sum = (x  + y) .toFixed(2);
+// console.log(sum);
+
+// conditions
+// let x = 10;
+// if (x > 5) {
+//     console.log('x is bigger than 5');
+// }
+
+// if, else
+// let time = 10;
+// let massage;
+// if (time < 5) {
+//     massage = 'Good night'
+// }
+// if (time < 0) {
+//      massage = 'Error.Wrong time'    
+// } else if (time <= 10) {
+//     massage = 'Good morning' 
+// } else if (time <= 17) {
+//     massage = 'Good day' 
+// }  else if (time < 24) {
+//     massage = 'Good night'
+// }else if  {
+//     massage = 'Error.Wrong data'
+// }
+
+// console.log(massage);
+
+// Логический оператор не - !
+// Let isSleeping = true;
+// if (!isSleeping) {
+//     console.log('person is not sleeping');
+//     }
+// Логический оператор или - || Возращает тру, если хоть один из операндов тру
+// console.log(  10 > 3|| 3 < 10);| // true 
+// Логический оператор или - && - Возращает тру, если оба операнда тру
+
+// const numberOne = 10;
+// const numberTwo = -20;
+
+// if (numberOne >= 0 && numberTwo>= 0) {
+//         console.log('Both numbers are positive');
+//         }
+//   else if (condition) {
+//     console.log('At least one number is not positive');
+// }
+// if (numberOne >= 0 && numberTwo>= 0) {
+//     console.log('Both numbers are not positive');
+//     }
+
+// switch
+// let fruit = "apple";
+// switch (fruit) {
+//  case 'banana';  
+//  console.log('it is a banana');
+//  break;
+//  case 'apple';  
+//  console.log('it is an apple');
+//  break;
+//  default:
+// console.log('it is asomething else'); 
+// } 
+
+// Тернарный оператор
+// let age = 18;
+// let message = age >= 18? 'особа повнолiтня':'особа неповнолiтня';
+// console.log(message);
+
+// Цикл for
+// For (i = 0; i > 10; i++){
+//     console.log(i);
+// }
+
+// Цикл while. Ctrl +c  - остановить цикл while. Будет true пока делаем действие i < 10)
+// let i = 0;
+// while (i < 10){
+//     console.log(i);console.log(i);  
+//     i++;
+// }
+    // do while циклы
+// 
+// let i = 0;
+// do {
+// console.log(i);
+// i++;
+// while (i < 5)
+// }
+
+// const number = 5;
+// for (let i = 1; i <= 10; i++) {
+//     let result = number * i;
+//     console.log(`${number}x${i} = ${result}`);  
+//     }
+// даст результат
+// 5x1 = 5
+// 5x2 = 10
+// 5x3 = 15
+// 5x4 = 20
+// 5x5 = 25
+// 5x6 = 30
+// 5x7 = 35
+// 5x8 = 40
+// 5x9 = 45
+// 5x10 = 50
+
+// цикл в цикле 
+// for (let number = 1; number <= 10; number++) {
+//     for (let factor = 0; factor <= 10; factor++) {
+                
+    
+//     let result = number * factor;
+//     console.log(`${number}x${factor} = ${result}`);  
+//     }
+//     console.log('-----------------'); 
+//     }
+
+// for (let number = 1; number <= 10; number++) {
+//     for (let factor = 0; factor <= 10; factor++) {
+//         console.log('-'); 
+//         console.log(`number = ${number}`); 
+//         console.log(`factor = ${factor}`);
+                
+    
+//     let result = number * factor;
+//     console.log(`${number}x${factor} = ${result}`);  
+//     }
+//     console.log('-----------------'); 
+//     }
+
