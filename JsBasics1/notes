@@ -1,0 +1,58 @@
+1 таск
+// const averageGrade = 100;
+// let message;
+// if  (averageGrade <= 59){
+//     message = 'Незадовільно';
+// } else if (averageGrade <= 70){
+//     message = 'Задовільно';
+// } else if (averageGrade <= 80){
+//     message = 'Добре';
+// } else if (averageGrade <= 90){
+//     message = 'Дуже добре';
+// } else if (averageGrade <= 100){
+//     message = 'Відмінно';
+// } 
+// console.log(message);
+
+таск 2
+// const averageGrade = 91
+
+// switch (true) {
+// case averageGrade < 60:
+//     console.log('Незадовільно');
+//     break;
+// case averageGrade <= 70:
+//     console.log('Задовільно');
+//     break;  
+//  case averageGrade <= 80:
+//     console.log('Добре');
+//     break;   
+// case averageGrade <= 90:
+//     console.log('Дуже добре');
+//     break
+// case averageGrade <= 100:
+// console.log('Відмінно');
+//     break 
+// }
+таск 3
+// Цикл for
+// const number = 7;
+// for (let i = 1; i <= 10; i++) {
+//     let result = number * i;
+//     console.log(`${number}x${i} = ${result}`);  
+//     }
+
+
+
+// const number = 7;
+// let i = 1;
+
+// while (i <= 10) {
+//     let result = number * i;
+//     console.log(`${number}x${i} = ${result}`);
+//     i++;
+// }
+
+
+
+

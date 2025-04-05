@@ -131,9 +131,7 @@
 //         console.log('-'); 
 //         console.log(`number = ${number}`); 
 //         console.log(`factor = ${factor}`);
-    //  первое  является счетчиком циклов, дальше идет условие, если выполняется, то идем в тело цикла. 
-    //  инкремент увеличиает значение number на 1. И все по-новой
-
+                
     
 //     let result = number * factor;
 //     console.log(`${number}x${factor} = ${result}`);  
@@ -141,17 +139,9 @@
 //     console.log('-----------------'); 
 //     }
 
-// for (a;b;c){}
-// a- запускает цикл
-// b-boolean
-// с-условие выхода из цикла
-// i - iterate
 
-// а
-// while (b) {
-// с
+//  else (averageGrade >= 60){
+//     console.log('Задовільно'); ; 
 // }
-a
-do {
-   c  
-}while (b) 
+
+// console.log('Дуже добре');
