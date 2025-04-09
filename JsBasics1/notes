@@ -52,13 +52,13 @@
 ; //     console.log(`${number}x${i} = ${result}`);
 ; //     i++;
 ; // }
-; где  5, 10 - аргументы
-; num1, num2 - параметры
-; function calculatesum(num1, num2){
-; console.log(`the sum is ${num1 + num2}`);
-; }
-; calculatesum(5, 10);
-; calculatesum(25, 30);
+где  5, 10 - аргументы
+num1, num2 - параметры
+function calculatesum(num1, num2){
+console.log(`the sum is ${num1 + num2}`);
+}
+calculatesum(5, 10);
+calculatesum(25, 30);
  
 ; function sayHi(){
 ;    console.log('Hello World');
