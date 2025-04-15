@@ -1,0 +1,57 @@
+
+// function processPayment(onsuccessCb,onFailureCb,paymentid){
+//     const isPaymentSuccess = true;
+//     if (isPaymentSuccess) {
+//         onsuccessCb(paymentid);
+//     } else{
+//         onFailureCb(paymentid);
+//     }
+// }
+// function onSuccessPayment(paymentids){
+//     console.log(`Payment ${paymentid} is Success`); 
+// }
+// function onFailurePayment(paymentids){
+//     console.log(`Payment ${paymentid} is failed`);  
+// }
+
+// processPayment(onSuccessPayment,onFailurePayment,'2323434545565')
+
+// // На базе шаблону создает объект
+// Function Person (name, age){
+// this.name = name;
+// this.age  = age;
+// }
+
+// const alice = new Person('Alice',30);
+// console.log(alice.name); 
+// console.log(alice.age);
+
+// // Анонимная функция
+// (function(){
+//     const massage = 'Локальная переменная'; 
+//     console.log(massage); 
+// })();
+// Замыкание(Сlosures) Внутрення функция замкнулась на внешней, на значении outerVar
+// function outer (){
+//     let outerVar = 10;
+
+//     function inner () {
+//     console.log(outerVar); 
+//     }
+//     return inner;
+// }
+// let closureFn = outer();
+// closureFn();
+
+// Вложенные функции-когда в одной функции мы создаем еще одну
+function outerFoo(){
+    const outerVar = 'Test';
+    console.log(outerVar); 
+
+function innerFoo() {
+    const innerVar = 'Test inner';
+    console.log(innerVar); 
+}
+innerFoo();
+}
+outerFoo();
