@@ -31,14 +31,14 @@ test('Create new post [/posts/1] and verify response is successfull', async () =
 const response = await PlaceholderController.addPost(newPost.title,newPost.body,newPost.userId);
    
    const responseData = response.data;
-   expect(response.status).toBe(200);
+   expect(response.status).toBe(201);
    expect(responseData.userId).toBe(newPost.userId);
    console.log(response.status);
    console.log(response.data);
    })
 // Test4
 test('get first album [albums/1/photos] and verify title', async () => {
-   const response = await NewContollers.getPhotos(1);
+   const response = await NewControllers.getPhotos(1);
     const responseBody = response.data;
     console.log(response.data);
     expect(response.status).toBe(200);
@@ -46,7 +46,7 @@ test('get first album [albums/1/photos] and verify title', async () => {
     
    })
 // Test5
-test.only('get first comment [/posts/1/comments] and verify name', async () => {
+test('get first comment [/posts/1/comments] and verify name', async () => {
    const response = await NewControllers.getComment(1);
     const responseBody = response.data;
     console.log(response.data);

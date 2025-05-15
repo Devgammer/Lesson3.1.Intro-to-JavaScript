@@ -11,7 +11,7 @@ class PlaceholderController extends BaseController {
       body: "bar",
       userId: 1,
     };
-    return await this.axiosInstance.get("/posts/", newPost);
+    return await this.axiosInstance.post("/posts/", newPost);
   }
 
 async getPost(id) {
