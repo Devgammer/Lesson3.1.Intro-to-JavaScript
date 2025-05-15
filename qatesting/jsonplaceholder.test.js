@@ -1,6 +1,7 @@
 const axios = require ('axios').default;
-const NewControllers = require('./qatesting/NewControllers.js');
-const PlaceholderController = require('./qatesting/PlaceholderController.js')
+const AlbumControllers = require('../controllers/AlbumControllers.js');
+const PlaceholderController = require('../controllers/PlaceholderController.js')
+const CommentControllers = require('../controllers/CommentControllers.js')
 
 // test1
 test('get all posts [/posts] and verify number', async () => {
@@ -38,7 +39,7 @@ const response = await PlaceholderController.addPost(newPost.title,newPost.body,
    })
 // Test4
 test('get first album [albums/1/photos] and verify title', async () => {
-   const response = await NewControllers.getPhotos(1);
+   const response = await AlbumControllers.getPhotos(1);
     const responseBody = response.data;
     console.log(response.data);
     expect(response.status).toBe(200);
@@ -47,7 +48,7 @@ test('get first album [albums/1/photos] and verify title', async () => {
    })
 // Test5
 test('get first comment [/posts/1/comments] and verify name', async () => {
-   const response = await NewControllers.getComment(1);
+   const response = await CommentControllers.getComment(1);
     const responseBody = response.data;
     console.log(response.data);
     expect(response.status).toBe(200);

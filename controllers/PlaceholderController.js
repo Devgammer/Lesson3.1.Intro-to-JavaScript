@@ -6,11 +6,8 @@ class PlaceholderController extends BaseController {
   }
 
   async addPost(title, body, userId) {
-    const newPost = {
-      title: "New Post",
-      body: "bar",
-      userId: 1,
-    };
+   const newPost = {title:title, body:body, userId:userId};
+ 
     return await this.axiosInstance.post("/posts/", newPost);
   }
 
