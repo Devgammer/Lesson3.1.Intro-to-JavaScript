@@ -1,1 +1,1 @@
-npm run runTests
+npm run eslint:all
