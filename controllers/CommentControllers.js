@@ -1,7 +1,7 @@
 const BaseController = require("./BaseController");
 
 
-class CommentControllers extends BaseController {
+class CommentController extends BaseController {
  
 async getComment(commentId) {
     return await this.axiosInstance.get(`/posts/${commentId}/comments`);
@@ -10,4 +10,4 @@ async getComment(commentId) {
 
  }
 
- module.exports = new CommentControllers();
+ module.exports = new CommentController();

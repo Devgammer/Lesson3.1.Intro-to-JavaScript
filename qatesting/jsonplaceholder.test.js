@@ -1,11 +1,11 @@
 const axios = require ('axios').default;
-const AlbumControllers = require('../controllers/AlbumControllers.js');
-const PlaceholderController = require('../controllers/PlaceholderController.js')
-const CommentControllers = require('../controllers/CommentControllers.js')
+const AlbumController = require('../controllers/AlbumControllers.js');
+const PostsController = require('../controllers/PostsController.js')
+const CommentController = require('../controllers/CommentControllers.js')
 
 // test1
 test('get all posts [/posts] and verify number', async () => {
- const response = await PlaceholderController.getAllPosts();
+ const response = await PostsController.getAllPosts();
  const responseBody = response.data;
  expect(response.status).toBe(200);
  expect(responseBody).toHaveLength(100);
@@ -14,7 +14,7 @@ test('get all posts [/posts] and verify number', async () => {
 // Test2
 
     test('get first post [/posts/1] and verify userId', async () => {
-    const response = await PlaceholderController.getPost(1);
+    const response = await PostsController.getPost(1);
     const responseBody = response.data;
     expect(response.status).toBe(200);
     expect(responseBody.userId).toBe(1);
@@ -29,7 +29,7 @@ test('Create new post [/posts/1] and verify response is successfull', async () =
         body: 'bar',
         userId: 1,
            }
-const response = await PlaceholderController.addPost(newPost.title,newPost.body,newPost.userId);
+const response = await PostsController.addPost(newPost.title,newPost.body,newPost.userId);
    
    const responseData = response.data;
    expect(response.status).toBe(201);
@@ -39,7 +39,7 @@ const response = await PlaceholderController.addPost(newPost.title,newPost.body,
    })
 // Test4
 test('get first album [albums/1/photos] and verify title', async () => {
-   const response = await AlbumControllers.getPhotos(1);
+   const response = await AlbumController.getPhotos(1);
     const responseBody = response.data;
     console.log(response.data);
     expect(response.status).toBe(200);
@@ -48,7 +48,7 @@ test('get first album [albums/1/photos] and verify title', async () => {
    })
 // Test5
 test('get first comment [/posts/1/comments] and verify name', async () => {
-   const response = await CommentControllers.getComment(1);
+   const response = await CommentController.getComment(1);
     const responseBody = response.data;
     console.log(response.data);
     expect(response.status).toBe(200);

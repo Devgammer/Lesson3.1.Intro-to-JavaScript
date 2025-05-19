@@ -1,6 +1,6 @@
 const BaseController = require("./BaseController");
 
-class PlaceholderController extends BaseController {
+class PostsController extends BaseController {
   async getAllPosts() {
     return await this.axiosInstance.get("/posts/");
   }
@@ -18,4 +18,4 @@ async getPost(id) {
 }
 
 
-module.exports = new PlaceholderController();
+module.exports = new PostsController();

@@ -1,16 +1,12 @@
 const BaseController = require("./BaseController");
 
 
-class AlbumControllers extends BaseController {
+class AlbumController extends BaseController {
   async getPhotos(albumId) {
     return await this.axiosInstance.get(`/albums/${albumId}/photos`);
   }   
 
-async getComment(commentId) {
-    return await this.axiosInstance.get(`/posts/${commentId}/comments`);
-  }
-
 
  }
 
- module.exports = new AlbumControllers();
+ module.exports = new AlbumController();
